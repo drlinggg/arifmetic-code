@@ -97,7 +97,7 @@ signed main() {
     ld r = 1;
     cout << "start: \n";
     for (ll i = 0; i < smh.size(); i++) {
-        cout << smh[i].this_char << " l: " << smh[i].l << " r: " << smh[i].r << '\n';
+        cout << smh[i].this_char << ' ' << smh[i].l << " " << smh[i].r << '\n';
     }
     cout << '\n';
     for (ll i = 0; i < input.size(); i++) {
@@ -115,11 +115,13 @@ signed main() {
                 smh[j].l = l;
             smh[j].r = (smh[j].count * (r - l)) + smh[j].l;
         }
-        cout << input[i] << ": \n";
+        cout << "normalize by " << input[i] << ": \n";
         for (ll j = 0; j < smh.size(); j++) {
-            cout << std::fixed << std::setprecision(i+4) << smh[j].this_char << " l: " << smh[j].l << " r: " << smh[j].r << '\n';
+            cout << std::fixed << std::setprecision(i+4) << smh[j].this_char << ' ' << smh[j].l << ' ' << smh[j].r << '\n';
         }
         cout << '\n';
     }
     return 0;
 }
+
+

@@ -95,6 +95,11 @@ signed main() {
     }
     ld l = 0;
     ld r = 1;
+    cout << "start: \n";
+    for (ll i = 0; i < smh.size(); i++) {
+        cout << smh[i].this_char << " l: " << smh[i].l << " r: " << smh[i].r << '\n';
+    }
+    cout << '\n';
     for (ll i = 0; i < input.size(); i++) {
         for (ll j = 0; j < smh.size(); j++) {
             if (smh[j].this_char == input[i]) {
@@ -114,8 +119,7 @@ signed main() {
         for (ll j = 0; j < smh.size(); j++) {
             cout << std::fixed << std::setprecision(i+4) << smh[j].this_char << " l: " << smh[j].l << " r: " << smh[j].r << '\n';
         }
+        cout << '\n';
     }
     return 0;
 }
-
-

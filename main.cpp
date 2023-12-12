@@ -10,7 +10,7 @@ const double PI = 3.141592653589793;
 //mt19937_64 rnd(chrono::steady_clock::now().time_since_epoch().count()); ll gen(){return rnd()%100;}
 
 struct chars {
-    ld count = 0;
+    float count = 0;
     ld l;
     ld r;
     char this_char;

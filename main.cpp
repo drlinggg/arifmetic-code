@@ -110,8 +110,12 @@ signed main() {
                 smh[j].l = l;
             smh[j].r = (smh[j].count * (r - l)) + smh[j].l;
         }
-      cout << '';
+        cout << input[i] << ": \n";
+        for (ll j = 0; j < smh.size(); j++) {
+            cout << std::fixed << std::setprecision(i+4) << smh[j].this_char << " l: " << smh[j].l << " r: " << smh[j].r << '\n';
+        }
     }
-    cout << l;
     return 0;
 }
+
+
